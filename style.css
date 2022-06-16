@@ -1,0 +1,36 @@
+/* Reset Basic */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: borde-box;
+}
+
+.game-board {
+    position: relative;
+    width: 80%;
+    height: 500px;
+    border: 1px solid #333; 
+    margin: 100px auto;   
+    overflow: hidden;
+}
+.mario {
+    position: absolute;
+    bottom: 0;
+    width: 100px;
+}
+
+.pipe {
+    position: absolute;
+    bottom: 0;
+    width: 50px;
+    animation : pipe-animation 3s infinite linear;
+}
+
+@keyframes pipe-animation{
+    from {
+        right: -50px;
+    }
+    to {
+        right: 100%;
+    }
+}
